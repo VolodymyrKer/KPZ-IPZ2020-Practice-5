@@ -25,3 +25,10 @@ def test_validator_ip():
     ip_addr = faker.ipv4()
     for i in range(50):
         assert validate_ip(ip_addr) == True
+
+
+def test_palindrom():
+    subject = "Hello, kayak, phrase!adress. mom ,!,wow ,deed ,,mom " \
+              "repaper level,уму,йой,зараз,файно,радар,!дід,пів,кугут,що "
+    palindrom_arr = ["kayak", "mom", "wow", "deed", "mom", "repaper", "level", "уму", "йой", "зараз", "радар", "дід"]
+    assert palindrom_arr == palindrom(subject)
