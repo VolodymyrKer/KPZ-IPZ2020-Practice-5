@@ -26,7 +26,6 @@ def test_validator_ip():
     faker = Faker()
     ip_addr = faker.ipv4()
 
-
     for i in range(50):
         assert validate_ip(ip_addr) == True
 
