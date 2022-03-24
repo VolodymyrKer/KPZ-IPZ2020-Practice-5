@@ -1,2 +1,4 @@
 .idea
 /venv/
+
+subjects/__pycache__
