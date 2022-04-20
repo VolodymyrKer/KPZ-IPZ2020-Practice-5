@@ -39,9 +39,9 @@ def test_validator_ip():
 
 
 def test_palindrom():
-    subject = "Hello, kayak, phrase!address. mom ,!,wow ,deed ,,mom " \
+    subject = "Kayak, phrase!address. mom ,!,wow ,deed ,,mom " \
               "repaper level,уму,йой,зараз,файно,радар,!дід,пів,кугут,що "
-    palindrom_arr = ["kayak", "mom", "wow", "deed", "mom", "repaper", "level", "уму", "йой", "зараз", "радар", "дід"]
+    palindrom_arr = ["Kayak", "mom", "wow", "deed", "mom", "repaper", "level", "уму", "йой", "зараз", "радар", "дід"]
 
     assert palindrom_arr == palindrom(subject)
 
