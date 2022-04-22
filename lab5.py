@@ -24,10 +24,12 @@ def test_prime_num_generator():
 
 def test_validator_ip():
     faker = Faker()
-    ip_addr = faker.ipv4()
 
     for i in range(50):
+        ip_addr = faker.ipv4()
         assert validate_ip(ip_addr) == True
+
+    assert False == validate_ip("0.333.0.0")
 
     with pytest.raises(Exception):
         assert False == validate_ip("1.0.0.")
